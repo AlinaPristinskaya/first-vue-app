@@ -38,14 +38,14 @@ export default {
 
   },
   data(){
-    return {apartment:null}
+    return  {apartment:null}
   },
   computed:{
       reviewsList(){
           return reviewsList
 
       },
-     /*  apartment(){
+   /*    apartment(){
           return apartments.find(apartment =>apartment.id==this.$route.params.id)
 
   } */

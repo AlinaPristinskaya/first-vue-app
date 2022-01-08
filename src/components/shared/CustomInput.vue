@@ -1,8 +1,8 @@
 <template>
-<div class="wraper-input">
+<!-- <div class="wraper-input"> -->
     <input v-on="listeners" class='custom-input'>
-    <span v-if="isValid" class="custom-input__error">{{errorMessage}}</span>
-    <div>
+   <!--  <span v-if="isValid" class="custom-input__error">{{errorMessage}}</span> -->
+  <!--   <div> -->
 </template>
 
 <script>
@@ -35,7 +35,7 @@
       };
     },
   },
-  watch:{
+/*   watch:{
     value(value){
       this.validate(value)
       console.log(value)
@@ -46,7 +46,7 @@
     validate(value){
       this.isValid=this.rules.every((rule)=>rule(value))
     }
-  }
+  } */
     }
 </script>
 

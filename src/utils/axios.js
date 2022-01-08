@@ -1,7 +1,7 @@
 import axios from 'axios';
 //import store from '../store';
 
-const axiosInstance = axios.create({
+ const axiosInstance = axios.create({
   baseURL: 'https://apt-booking-api.herokuapp.com/',
 });
 
