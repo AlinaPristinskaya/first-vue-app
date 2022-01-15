@@ -2,6 +2,7 @@
   <form class="form" @submit.prevent="handleSubmit">
     <CustomSelect :items="cities" v-model="city" class="form__select" />
     <CustomInput
+      type="number"
       v-model="price"
       placeholder="Цена, от"
       error-message="Не должно быть пустым"
@@ -68,5 +69,6 @@ export default {
   &__submit {
     margin-left: auto;
   }
+  margin-bottom: 50px;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <main class="homepage">
-   
+   <SectionSpacer>
     <Container>
      <ApartmentsFilterForm @submit="filter"/>  
     </Container>
@@ -20,7 +20,7 @@
       
     </ApartmentsList>
     </Container>
-    
+   </SectionSpacer>
   
 
     </main></div>
@@ -34,6 +34,7 @@ import ApartmentsItem from'../components/apartments/ApartmentsItem.vue'
 import ApartmentsFilterForm from'../components/apartments/ApartmentsFilterForm.vue'
 import Container from '../components/shared/Container.vue'
 import a from '../services/apartments.services'
+import SectionSpacer from '../components/shared/form/SectionWidthHeaderSpacer.vue'
 
 
 
@@ -44,6 +45,7 @@ export default {
     ApartmentsItem,
     ApartmentsFilterForm,
     Container,
+    SectionSpacer,
         
    },
    computed:{

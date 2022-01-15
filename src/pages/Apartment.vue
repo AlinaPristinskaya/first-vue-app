@@ -1,6 +1,6 @@
 <template>
   <main class="apartment-page">
-    <!-- <SectionWithHeaderSpacer> -->
+    <SectionSpacer>
       <Container>
         <div v-if="apartment" class="apartment-page__content">
           <ApartmentsMainInfo :apartment="apartment" />
@@ -13,7 +13,7 @@
           </div>
         </div>
       </Container>
-    <!-- </SectionWithHeaderSpacer> -->
+    </SectionSpacer>
   </main>
 </template>
 
@@ -25,6 +25,7 @@ import ApartmentsOwner from '../components/apartments/ApartmentsOwner.vue'
 import Reviews from '../components/reviews'
 import reviewsList from '../components/reviews/reviews.json'
 import a from '../services/apartments.services'
+import SectionSpacer from '../components/shared/form/SectionWidthHeaderSpacer.vue'
 
 
 
@@ -34,7 +35,8 @@ export default {
       ApartmentsMainInfo,
       ApartmentsOwner,
       Container,
-      Reviews
+      Reviews,
+      SectionSpacer
 
   },
   data(){

@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    
+    <Notifications />
     <div class="content">
       <AppHeader/>
        <router-view></router-view>
        </div>
-    <AppFooter/>
+     <AppFooter/>
 
     </div>
     
@@ -16,14 +16,15 @@
 
 import AppFooter from './components/Footer.vue'
 import AppHeader from "./components/Header.vue"
+import Notifications from './components/notifications'
 
 export default {
   name: 'App',
   components: {
     AppFooter,
-    AppHeader
-   }
- 
+    AppHeader,
+    Notifications
+   }   
  }
 
 </script>
@@ -41,7 +42,7 @@ export default {
 }
 .content{
   flex-grow:1;
-  padding-top:120px ;
+  
 }
 
 </style>

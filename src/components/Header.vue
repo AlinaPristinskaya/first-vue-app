@@ -32,6 +32,7 @@ import Logo from"./Logo.vue"
     width: 100%;
     padding: 16px;
     background: $secondary-color;
+    z-index: 100;
 
 }
 </style>

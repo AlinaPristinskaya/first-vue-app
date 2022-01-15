@@ -15,5 +15,5 @@ export const isRequired = (val) => ({
   
   export const passwordValidation = (val) => ({
     hasPassed: /^(?=.*[A-Za-z])(?=.*[\d])[a-zA-Z0-9]{7,256}$/.test(val),
-    message: 'Пароль должен содержать одну цифру и один символ',
+    message: 'Пароль должен состоять из цифр и латинских букв верхнего и нижнего регистра',
   });
